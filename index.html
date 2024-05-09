@@ -1,18 +1,61 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>grappling hook?</title>
 
-  <!--import scripts here!-->
+<head>
+  <title>grappling hook?</title>
+
+  <script src="./global variables.mjs" type="module"></script>
+  <script src="./map generation.mjs" type="module"></script>
+  <script src="./player.mjs" type="module"></script>
+  <script src="./graphics.mjs" type="module"></script>
+
+  <script src="./main.mjs" type="module"></script>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    #game-window, #console, #help {
+      margin-top: 5%;
+      box-sizing: border-box;
+      border: 1px solid black;
+      display: inline;
+    }
+
+    #game-window {
+      width: 50%;
+      height: 50%;
+    }
+
+    #console {
+      float: right;
+      width: 25%;
+      max-height: 50%;
+    }
+
+    #help {
+      float: left;
+      width: 25%;
+      overflow: scroll;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <p id="help">
+    helpful text will be here later
+    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  </p>
+  <canvas id="game-window"></canvas>
+  <div id="console">
+    <p style="margin-left: 25%; margin-right: 25%;">console</p><br />
+  </div>
 
 
+</body>
 
-    
-  </head>
-  <body>
-
-  
-    
-    
-  </body>
 </html>
